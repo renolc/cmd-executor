@@ -1,6 +1,6 @@
 {
   "name": "simple-cmd-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny proxy object that provides a complete, promisified wrapper around the CLI.",
   "main": "index.js",
   "engines": {
