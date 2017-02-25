@@ -5,7 +5,7 @@ Tiny proxy object to execute arbitrary CLI commands. All calls return a promise.
 ### Installation
 
 ```bash
-npm i simple-cmd-promise -simple
+npm i simple-cmd-promise -S
 ```
 
 ### Usage
