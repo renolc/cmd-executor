@@ -9,7 +9,14 @@
   "scripts": {
     "test": "node test.js"
   },
-  "keywords": [],
+  "keywords": [
+    "proxy",
+    "simple",
+    "exec",
+    "command",
+    "cli",
+    "promise"
+  ],
   "author": "Phillip Gibson <gibson.phillip.j@gmail.com>",
   "license": "MIT",
   "repository": {
