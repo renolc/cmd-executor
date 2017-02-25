@@ -1,17 +1,17 @@
-# simple-cmd-promise
+# cmd-executor
 
 Tiny proxy object to execute arbitrary CLI commands. All calls return a promise.
 
 ### Installation
 
 ```bash
-npm i simple-cmd-promise -S
+npm i cmd-executor -S
 ```
 
 ### Usage
 
 ```js
-const cmd = require('simple-cmd-promise')
+const cmd = require('cmd-executor')
 
 // all calls return a promise, so you should wait for them to complete
 // before executing another command. You can use `.then()` or `await`.
@@ -49,5 +49,32 @@ const cmd = require('simple-cmd-promise')
 
   // clean up the file
   await cmd.rm('a.txt')
+})()
+```
+
+### Advanced Usage
+
+```js
+// lets say you wanted a promise wrapper around `git`, you
+// could easily do this with cmd-executor
+const git = require('cmd-executor').git
+
+// and now you have complete access to the git CLI
+;(async () => {
+  await git.init()
+  await git.add('.')
+  await git.remote.add('origin', url)
+  await git.commit('-m "Initial commit"')
+})()
+
+// destructuring also works for whatever commands you want
+const { mkdir, touch, echo, cat, rm } = require('cmd-executor')
+
+;(async () => {
+  await mkdir('bork')
+  await touch('bork/file')
+  await echo('"hi!" > bork/file')
+  console.log(await cat('bork/file'))
+  await rm('-rf bork')
 })()
 ```

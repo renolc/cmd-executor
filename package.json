@@ -1,6 +1,6 @@
 {
-  "name": "simple-cmd-promise",
-  "version": "1.0.1",
+  "name": "cmd-executor",
+  "version": "1.1.0",
   "description": "A tiny proxy object that provides a complete, promisified wrapper around the CLI.",
   "main": "index.js",
   "engines": {
@@ -21,10 +21,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/renolc/simple-cmd-promise.git"
+    "url": "https://github.com/renolc/cmd-executor.git"
   },
   "bugs": {
-    "url": "https://github.com/renolc/simple-cmd-promise/issues"
+    "url": "https://github.com/renolc/cmd-executor/issues"
   },
   "dependencies": {
     "simple-exec-promise": "^1.0.0"
