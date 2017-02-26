@@ -1,4 +1,4 @@
-# cmd-executor
+# cmd-executor [![npm version](https://badge.fury.io/js/cmd-executor.svg)](https://badge.fury.io/js/cmd-executor)
 
 Tiny proxy object to execute arbitrary CLI commands. All calls return a promise.
 
