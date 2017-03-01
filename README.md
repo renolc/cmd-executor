@@ -24,12 +24,12 @@ const cmd = require('cmd-executor')
   await cmd.touch('a.txt')
 
   // will call `echo "hello, world!" > a.txt`
-  await cmd.echo['"hello, world!"']['>']('a.txt')
+  await cmd.echo('"hello, world!" > a.txt')
 
   // since the attributes/functions are arbitrary, these are
   // functionally equivalent to the above line:
-  //   await cmd.echo('"hello, world!" > a.txt')
   //   await cmd.echo["hello, world!"]('> a.txt')
+  //   await cmd.echo['"hello, world!"']['>']('a.txt')
 
   // only the last attribute can be called as a function
   // so this will not work:
